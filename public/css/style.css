@@ -1,0 +1,83 @@
+/* Topo */
+.topo {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+/* Botão entrada */
+.btn-entrada {
+  text-decoration: none;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-entrada:hover {
+  background-color: #218838;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Cabeçalho */
+th {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px;
+}
+
+/* Linhas */
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Hover */
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Ações */
+.acoes {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+/* Botão check-out */
+.btn-check {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-check:hover {
+  background-color: #218838;
+}
+
+/* Botão excluir */
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}

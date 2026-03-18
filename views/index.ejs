@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Sistema de Estacionamento</h1>
+
+    <!-- Botão de entrada -->
+    <div class="topo">
+      <a href="/checkin" class="btn-entrada">+ Entrada</a>
+    </div>
+
+    <!-- Tabela -->
+    <table>
+
+      <thead>
+        <tr>
+          <th>N</th>
+          <th>Data</th>
+          <th>Placa</th>
+          <th>Modelo</th>
+          <th>Entrada</th>
+          <th>Saída</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+
+     <%
+  const veiculos = [
+    {
+      id: 1,
+      data: "03/05/2025",
+      placa: "ABC-1234",
+      modelo: "Monza",
+      entrada: "13:00",
+      saida: null
+    },
+    {
+      id: 2,
+      data: "03/05/2025",
+      placa: "XYZ-9999",
+      modelo: "Civic",
+      entrada: "14:00",
+      saida: "15:30"
+    }
+  ];
+%>
+
+<tbody>
+  <% veiculos.forEach(v => { %>
+    <tr>
+      <td><%= v.id %></td>
+      <td><%= v.data %></td>
+      <td><%= v.placa %></td>
+      <td><%= v.modelo %></td>
+      <td><%= v.entrada %></td>
+      <td><%= v.saida ? v.saida : '--' %></td>
+      <td class="acoes">
+        <button class="btn-check">✔</button>
+        <button class="btn-delete">🗑️</button>
+      </td>
+    </tr>
+  <% }) %>
+</tbody>
+
+    </table>
+
+  </div>
+
+  <script src="/js/script.js"></script>
+
+</body>
+</html>
